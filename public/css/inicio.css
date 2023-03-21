@@ -80,7 +80,7 @@ la cual incluye un video y un titulo dinamico */
   /* segunda section */
   .about-us {
     text-align: center;
-    min-height: 700px;
+    min-height: 500px;
   }
   
   .services {
@@ -179,6 +179,12 @@ la cual incluye un video y un titulo dinamico */
     .service {
       width: 80%;
       margin-bottom: 40px;
+    }
+  }
+  
+  @media only screen and (min-width: 2560px) {
+    .about-us {
+      min-height: 700px;
     }
   }
   
