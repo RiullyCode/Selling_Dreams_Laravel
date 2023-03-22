@@ -8,7 +8,34 @@
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    background-color: #292929;
+    color: #fff;
   }
+
+  section {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  #noscroll {
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #61b2e0;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  
   
   /* Sección de presentación */
   
@@ -27,7 +54,9 @@
   /* Sección del equipo */
   
   .card {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    background-color: #333333;
+    color: #ffffff;
   }
   
   .card-title {
@@ -45,14 +74,22 @@
   .achievement {
     text-align: center;
     padding: 1rem;
-    background-color: #f8f9fa;
-    border: 1px solid #dee2e6;
+    background-color: #333333;
+    border: 1px solid #555555;
     border-radius: 0.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 550px;
+    min-width: 100%;
+    min-height: 550px;
+    object-fit: cover;
   }
   
   .achievement i {
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 1rem;
   }
   
@@ -60,13 +97,14 @@
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: #ffffff;
   }
   
   .achievement p {
     font-size: 1rem;
     line-height: 1.4;
+    color: #ffffff;
   }
-  
   /* Responsive */
   @media (max-width: 991.98px) {
     h2 {

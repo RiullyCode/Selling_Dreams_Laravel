@@ -39,26 +39,31 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- ... -->
+
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-centered">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{ route('inicio') }}">Inicio</a>
+            <a class="nav-link {{ Route::currentRouteName() === 'inicio' ? 'active' : '' }}" aria-current="page" href="{{ route('inicio') }}">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('sobre_nosotros') }}">Sobre Nosotros</a>
+            <a class="nav-link {{ Route::currentRouteName() === 'sobre_nosotros' ? 'active' : '' }}" href="{{ route('sobre_nosotros') }}">Sobre Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('mapa') }}">Mapa</a>
+            <a class="nav-link {{ Route::currentRouteName() === 'mapa' ? 'active' : '' }}" href="{{ route('mapa') }}">Mapa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('administracion') }}">Administración</a>
+            <a class="nav-link {{ Route::currentRouteName() === 'administracion' ? 'active' : '' }}" href="{{ route('administracion') }}">Administración</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('premium') }}">Premium</a>
+            <a class="nav-link {{ Route::currentRouteName() === 'premium' ? 'active' : '' }}" href="{{ route('premium') }}">Premium</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
+            <a class="nav-link {{ Route::currentRouteName() === 'contacto' ? 'active' : '' }}" href="{{ route('contacto') }}">Contacto</a>
           </li>
         </ul>
+
+        <!-- ... -->
+
         <div class="d-flex" style="margin-right: 20px;">
           <div class="me-3 d-none" id="username">Nombre de usuario</div>
           <a href="#" class="text-white me-4" data-bs-toggle="modal" data-bs-target="#loginModal">
