@@ -32,6 +32,7 @@
           En Selling Dreams, no solo nos enfocamos en desarrollar soluciones tecnológicas avanzadas, sino también en brindar un servicio excepcional a nuestros clientes. Nos aseguramos de entender sus necesidades y trabajar en colaboración con ellos para crear soluciones personalizadas y efectivas. Además, nuestro compromiso con la innovación nos mantiene en constante evolución y mejora, lo que nos permite ofrecer productos y servicios de vanguardia en todo momento.
         </p>
       </div>
+      
 
       <!-- Sección del equipo -->
       <div class="row mt-5">
@@ -85,15 +86,15 @@
     <div class="col-md-4" data-aos="fade-up">
       <div class="achievement">
         <i class="fas fa-award fa-2x"></i>
-        <h4>Logro 1</h4>
-        <p>Descripción del logro 1.</p>
+        <h4>Eficiencia en la cadena de suministro</h4>
+        <p>Nuestra plataforma de geolocalización y monitoreo de stock en tiempo real ha logrado aumentar la eficiencia en la cadena de suministro de nuestros clientes en un 25%. Al proporcionar información precisa y actualizada sobre el stock, nuestros usuarios pueden tomar decisiones informadas y mejorar la gestión del inventario, reduciendo así los costos y el tiempo de reposición..</p>
       </div>
     </div>
     <div class="col-md-4" data-aos="fade-up">
       <div class="achievement">
         <i class="fas fa-award fa-2x"></i>
-        <h4>Logro 2</h4>
-        <p>Descripción del logro 2.</p>
+        <h4>Integración exitosa con plataformas líderes</h4>
+        <p>Hemos logrado integrar nuestra solución de geolocalización y muestreo de stock en tiempo real con varias plataformas líderes de gestión de la cadena de suministro y sistemas de información empresarial. Estas integraciones permiten a nuestros clientes acceder a información en tiempo real sobre sus inventarios y ubicaciones de productos a través de un único sistema unificado, mejorando la toma de decisiones y la eficiencia operativa.</p>
       </div>
     </div>
     <div class="col-md-4" data-aos="fade-up">

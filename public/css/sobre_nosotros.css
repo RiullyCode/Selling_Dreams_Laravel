@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     background-color: #292929;
-    color: #fff;
+    color: black;
   }
 
   section {
@@ -49,6 +49,7 @@
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
+    color: #fff;
   }
   
   /* Sección del equipo */
