@@ -14,13 +14,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/inicio', function () {
     return view('inicio');
-});
+})->name('inicio');
 
-Route::get('/base', function () {
-    return view('base');
-});
+Route::get('/sobre_nosotros', function () {
+    return view('sobre_nosotros');
+})->name('sobre_nosotros');
+
+Route::get('/mapa', function () {
+    return view('mapa');
+})->name('mapa');
+
+Route::get('/administracion', function () {
+    return view('administracion');
+})->name('administracion');
+
+Route::get('/premium', function () {
+    return view('premium');
+})->name('premium');
+
+Route::get('/contacto', function () {
+    return view('contacto');
+})->name('contacto');
+
+Route::get('/terminosycondiciones', function () {
+    return view('terminosycondiciones');
+})->name('terminosycondiciones');

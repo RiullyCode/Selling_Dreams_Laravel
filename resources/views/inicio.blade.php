@@ -28,10 +28,10 @@
         nosotros te ayudamos a encontrarla
       </p>
       <div class="buttons">
-        <a href="#" class="btn btn-light"
+        <a href="{{ route('sobre_nosotros') }}" class="btn btn-light"
           ><i class="fa-solid fa-users"></i> Conócenos</a
         >
-        <a href="#" class="btn btn-warning"
+        <a href="{{ route('sobre_nosotros') }}" class="btn btn-warning"
           ><i class="fas fa-map-location-dot fa-fw"></i> Ver Mapa</a
         >
       </div>
@@ -72,7 +72,7 @@
     <div class="map-content">
       <h2 data-aos="fade-up" data-aos-delay="300" class="aos-title">Encuentra máquinas expendedoras cerca de ti</h2>
       <p data-aos="fade-up" data-aos-delay="600" class="aos-text">Explora nuestro mapa interactivo y descubre las máquinas expendedoras en tu área.</p>
-      <a href="#" data-aos="fade-up" data-aos-delay="900" class="btn btn-map aos-button">Ver Mapa <i class="fas fa-map-location-dot fa-fw"></i></a>
+      <a href="{{ route('mapa') }}"  data-aos="fade-up" data-aos-delay="900" class="btn btn-map aos-button">Ver Mapa <i class="fas fa-map-location-dot fa-fw"></i></a>
     </div>
     <img src="https://cdn.discordapp.com/attachments/914613587715182622/1086364643754266724/pexels-justin-hamilton-92248.jpg" alt="Mapa de máquinas expendedoras" class="map-image" />
   </section>
@@ -84,7 +84,7 @@
       <div class="left-content" data-aos="fade-right">
         <h2>Gestiona tus máquinas expendedoras</h2>
         <p>Añade máquinas expendedoras y controla su estocaje, lleva tu empresa al siguiente nivel con nosotros</p>
-        <a href="#" class="btn btn-animated-map">Administración <i class="fa-solid fa-wand-magic-sparkles"></i></a>
+        <a href="{{ route('administracion') }}"  class="btn btn-animated-map">Administración <i class="fa-solid fa-wand-magic-sparkles"></i></a>
       </div>
       <div class="right-content" data-aos="fade-left">
         <video src="https://cdn.discordapp.com/attachments/914613587715182622/1085692550632972388/AdobeStock_227525536.mov" autoplay muted loop class="map-thumbnail"></video>
@@ -103,38 +103,38 @@
           <h3 class="card-title">Usuario</h3>
           <h4 class="card-subtitle">Sin anuncios para siempre</h4>
           <p class="card-price">10€</p>
-          <a href="#" class="btn-card">Seleccionar plan</a>
+          <a href="{{ route('premium') }}" class="btn-card">Seleccionar plan</a>
         </div>
         <div class="pricing-card" data-aos="fade-up" data-aos-delay="120">
           <h3 class="card-title">Usuario</h3>
           <h4 class="card-subtitle">Descuentos y sin anuncios</h4>
           <p class="card-price">9€/mes</p>
-          <a href="#" class="btn-card">Seleccionar plan</a>
+          <a href="{{ route('premium') }}" class="btn-card">Seleccionar plan</a>
         </div>
         <div class="pricing-card" data-aos="fade-up" data-aos-delay="120">
           <h3 class="card-title">Usuario</h3>
           <h4 class="card-subtitle">Descuentos en todas las máquinas y ofertas exclusivas</h4>
           <p class="card-price">20€</p>
-          <a href="#" class="btn-card">Seleccionar plan</a>
+          <a href="{{ route('premium') }}" class="btn-card">Seleccionar plan</a>
         </div>
         <!--? Empresas -->
         <div class="pricing-card" data-aos="fade-up" data-aos-delay="120">
           <h3 class="card-title">Empresa</h3>
           <h4 class="card-subtitle">Destacar 1 máquina expendedora</h4>
           <p class="card-price">20€/mes</p>
-          <a href="#" class="btn-card">Seleccionar plan</a>
+          <a href="{{ route('premium') }}" class="btn-card">Seleccionar plan</a>
         </div>
         <div class="pricing-card" data-aos="fade-up" data-aos-delay="120">
           <h3 class="card-title">Empresa</h3>
           <h4 class="card-subtitle">Destacar hasta 4 máquinas</h4>
           <p class="card-price">50€/mes</p>
-          <a href="#" class="btn-card">Seleccionar plan</a>
+          <a href="{{ route('premium') }}" class="btn-card">Seleccionar plan</a>
         </div>
         <div class="pricing-card" data-aos="fade-up" data-aos-delay="120">
           <h3 class="card-title">Empresa</h3>
           <h4 class="card-subtitle">Destacar todas las máquinas que quieras</h4>
           <p class="card-price">100€/mes</p>
-          <a href="#" class="btn-card">Seleccionar plan</a>
+          <a href="{{ route('premium') }}" class="btn-card">Seleccionar plan</a>
         </div>
       </div>
     </div>
