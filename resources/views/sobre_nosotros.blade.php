@@ -100,8 +100,8 @@
     <div class="col-md-4" data-aos="fade-up">
       <div class="achievement">
         <i class="fas fa-award fa-2x"></i>
-        <h4>Logro 3</h4>
-        <p>Descripción del logro 3.</p>
+        <h4>Reducción del tiempo de respuesta</h4>
+        <p>Gracias a nuestra plataforma de geolocalización y monitoreo de stock en tiempo real, nuestros clientes han experimentado una reducción significativa en el tiempo de respuesta ante cambios en la demanda o incidencias en el inventario. Al proporcionar información actualizada y precisa, las empresas pueden reaccionar rápidamente a las fluctuaciones del mercado y resolver problemas de stock de manera más eficiente, mejorando así la satisfacción del cliente y la rentabilidad.</p>
       </div>
     </div>
   </div>
