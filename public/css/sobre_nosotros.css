@@ -25,118 +25,103 @@
     max-width: 100%;
     padding: 2rem;
   }
+  
+/* Sección de presentación */
 
-  h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: #61b2e0;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #61b2e0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.img-responsive {
+  max-width: 80%;
+  height: auto;
+}
+
+@media (max-width: 1600px) {
+  .img-responsive {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+  
+  
+  /* Sección del equipo */
+  
+  .card {
+    margin-bottom: 2.5rem;
+    background-color: #333333;
+    color: #ffffff;
+    min-height: 300px;
   }
   
-/* Clase personalizada para columnas de tarjetas de equipo y logros */
-.custom-col {
-  margin-bottom: 2.5rem;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Tarjetas del equipo */
-.card {
-  margin-bottom: 2.5rem;
-  background-color: #333333;
-  color: #ffffff;
-  min-height: 300px;
-}
-
-/* Tarjetas de logros */
-.achievement {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333333;
-  border: 1px solid #555555;
-  border-radius: 0.25rem;
-  margin-bottom: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 300px;
-}
-
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
   
-/* Sección del equipo y de logros */
-.card {
-  margin-bottom: 2.5rem;
-  background-color: #333333;
-  color: #ffffff;
-  min-height: 300px;
-}
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Sección de logros */
+  
+  .achievement {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333333;
+    border: 1px solid #555555;
+    border-radius: 0.25rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+  }
 
-.card-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+  .card-img-top {
+    width: 100%;
+    height: 550px;
+    min-width: 100%;
+    min-height: 550px;
+    object-fit: cover;
+  }
+  
+  .achievement i {
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .achievement h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .achievement p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #ffffff;
+  }
 
-.card-text {
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-/* Tarjetas del equipo */
-.col-md-4 {
-  margin-bottom: 2.5rem;
-}
-
-/* Tarjetas de logros */
-.achievement {
-  text-align: center;
-  padding: 1rem;
-  background-color: #333333;
-  border: 1px solid #555555;
-  border-radius: 0.25rem;
-  margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 300px;
-}
-
-.achievement-grid .col-md-4 {
-  margin-bottom: 2.5rem;
-}
-
-.card-img-top {
-  width: 100%;
-  height: 550px;
-  min-width: 100%;
-  min-height: 550px;
-  object-fit: cover;
-}
-
-.achievement i {
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
-
-.achievement h4 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #ffffff;
-}
-
-.achievement p {
-  font-size: 1rem;
-  line-height: 1.4;
-  color: #ffffff;
-}
-
-.logros-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
+  .logros-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   
   /* Responsive */
   @media (max-width: 991.98px) {
@@ -156,4 +141,23 @@
       font-size: 1.1rem;
     }
   }
+
+  /* Ajustar la altura de los logros */
+.achievement-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.achievement-grid .col-md-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.achievement {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
   

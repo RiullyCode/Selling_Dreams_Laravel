@@ -92,14 +92,14 @@
             </div>
         </div>
         <!-- Sección de logros -->
-        <div class="container-fluid">
+        <div class="container">
           <div class="row mt-5">
               <div class="col-12">
                   <h2 class="text-center" data-aos="zoom-in">Nuestros Logros</h2>
               </div>
           </div>
             <div class="row mt-3 achievement-grid">
-              <div class="col-md-4 custom-col" data-aos="fade-up">
+              <div class="col-md-3 custom-col" data-aos="fade-up">
                     <div class="achievement">
                         <i class="fas fa-award fa-2x"></i>
                         <h4>Eficiencia en la cadena de suministro</h4>
@@ -113,7 +113,7 @@
                             siguiente nivel con nosotros</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="achievement">
                         <i class="fas fa-award fa-2x"></i>
                         <h4>Integración exitosa con plataformas líderes</h4>
@@ -126,7 +126,7 @@
                             la toma de decisiones y la eficiencia operativa.</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up">
+                <div class="col-md-3" data-aos="fade-up">
                     <div class="achievement">
                         <i class="fas fa-award fa-2x"></i>
                         <h4>Reducción del tiempo de respuesta</h4>
@@ -139,6 +139,14 @@
                             de manera más eficiente.</p>
                     </div>
                 </div>
+                <div class="col-md-3" data-aos="fade-up">
+                    <div class="achievement">
+                        <i class="fas fa-award fa-2x"></i>
+                        <h4>Satisfacción del cliente</h4>
+                        <p>Nuestro compromiso con la excelencia y el soporte personalizado ha resultado en una alta satisfacción del cliente. Continuamente trabajamos para mejorar y adaptar nuestras soluciones a las necesidades específicas de cada cliente, garantizando un rendimiento óptimo y relaciones a largo plazo.</p>
+                    </div>
+                </div>
+                
             </div>
         </div>
         </div>
