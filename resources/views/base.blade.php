@@ -25,6 +25,8 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- link al CSS -->
   <link rel="stylesheet" href="{{ url('css/base.css') }}">
+  <!-- link al JS -->
+  <script src="{{ url('js/base.js') }}"></script>
   @yield('head')
 </head>
 
@@ -119,49 +121,79 @@
         <div class="modal-body">
           <form>
             <div class="mb-3">
-              <label for="registerName" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="registerName" aria-describedby="nameHelp" />
-              <div id="nameHelp" class="form-text">
-                Introduce tu nombre de pila
+              <label class="form-label">Formulario de registro</label>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="registerTypeSwitch">
+                <label class="form-check-label" for="registerTypeSwitch">¿Eres una empresa?</label>
               </div>
             </div>
-            <div class="mb-3">
-              <label for="surname" class="form-label">Apellidos</label>
-              <input type="text" class="form-control" id="surname" aria-describedby="surnameHelp" />
-              <div id="surnameHelp" class="form-text">
-                Introduce tu primer y segundo apellido
+
+            <div id="personaFisica">
+              <div class="mb-3">
+                <label for="registerName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="registerName" aria-describedby="nameHelp" />
+                <div id="nameHelp" class="form-text">
+                  Introduce tu nombre de pila
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="surname" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="surname" aria-describedby="surnameHelp" />
+                <div id="surnameHelp" class="form-text">
+                  Introduce tu primer y segundo apellido
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="registerEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text">
+                  Introduce el email con el que te quieres registrar
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="registerPasswordCliente" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="registerPasswordCliente" aria-describedby="passwordConfirmHelpCliente" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" />
+                <div id="passwordConfirmHelpCliente" class="form-text">
+                  Por favor, introduce de nuevo tu contraseña.
+                </div>
               </div>
             </div>
-            <div class="mb-3">
-              <label for="registerEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="registerEmail" aria-describedby="emailHelp" />
-              <div id="emailHelp" class="form-text">
-                Introduce el email con el que te quieres registrar
+
+            <div id="personaJuridica" style="display: none;">
+              <div class="mb-3">
+                <label for="companyType" class="form-label">Tipo de empresa</label>
+                <select class="form-select" id="companyType" aria-describedby="companyTypeHelp">
+                  <option value="sociedad_anonima">Sociedad Anónima</option>
+                  <option value="sociedad_limitada">Sociedad Limitada</option>
+                </select>
+                <div id="companyTypeHelp" class="form-text">
+                  Selecciona el tipo de empresa
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="nameEmpresa" class="form-label">Nombre de la empresa</label>
+                <input type="text" class="form-control" id="nameEmpresa" aria-describedby="helpNameEmpresa" />
+                <div id="helpNameEmpresa" class="form-text">
+                  Introduce el nombre de la empresa
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="registerEmailEmpresa" class="form-label">Email Empresa</label>
+                <input type="email" class="form-control" id="registerEmailEmpresa" aria-describedby="emailHelpEmpresa" />
+                <div id="emailHelpEmpresa" class="form-text">
+                  Introduce el email con el que te quieres registrar
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="registerPasswordEmpresa" class="form-label">Contraseña Empresa</label>
+                <input type="password" class="form-control" id="registerPasswordEmpresa" aria-describedby="passwordHelpEmpresa" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" />
+                <div id="passwordHelpEmpresa" class="form-text">
+                  Introduce la contraseña con la que te quieres registrar
+                </div>
               </div>
             </div>
-            <div class="mb-3">
-              <label for="registerPasswordConfirm" class="form-label">Confirmar contraseña</label>
-              <input type="password" class="form-control" id="registerPasswordConfirm" aria-describedby="registerPasswordConfirmHelp" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" />
-              <div id="registerPasswordConfirmHelp" class="form-text">
-                Por favor, introduce de nuevo tu contraseña.
-              </div>
-              <div id="passwordMatchError" class="invalid-feedback"></div>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Tipo de registro</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="registerType" id="registerType1" value="fisica" checked />
-                <label class="form-check-label" for="registerType1">
-                  Persona física
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="registerType" id="registerType2" value="juridica" />
-                <label class="form-check-label" for="registerType2">
-                  Persona jurídica
-                </label>
-              </div>
-            </div>
+
+            <!-- Resto del formulario -->
             <div class="form-check mt-3">
               <input class="form-check-input" type="checkbox" id="termsAndConditions" required />
               <label class="form-check-label" for="termsAndConditions">
