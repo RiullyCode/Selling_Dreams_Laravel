@@ -1,5 +1,16 @@
+/* Ajustar el tamaño y el estilo del contenedor del mapa */
 #map {
-    height: 600px;
-    width: 100%;
-    border: 1px solid #333;
-  }
+  height: 600px;
+  width: 100%;
+  border: 1px solid #333;
+}
+
+/* Estilos para el contenedor de información de la máquina */
+#machine-info {
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 15px;
+}

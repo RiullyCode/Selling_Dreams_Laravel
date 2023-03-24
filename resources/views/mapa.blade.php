@@ -6,9 +6,10 @@
   <!-- Cualquier otra etiqueta meta, estilo o script que se necesite incluir en el head -->
 <!-- link al CSS -->
 <link rel="stylesheet" href="{{ url('css/mapa.css') }}">
-<!-- link al JS -->
+<!-- link a JS -->
+<script src="{{ url('js/mapa.js') }}"></script>
 <!-- link al mapa googleapi -->
-<script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API_AQUI&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0Na630R_K2PnRSlLSiNHPLelsIQQJwFM&callback=initMap" async defer></script>
 
 @endsection
 
