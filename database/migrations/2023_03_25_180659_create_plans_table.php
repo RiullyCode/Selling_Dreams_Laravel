@@ -11,11 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('plans', function (Blueprint $table) {
+        Schema::create('planes', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre')->unique();
+            $table->text('descripcion')->nullable();
+            $table->decimal('precio', 10, 2);
+            $table->string('tipo_usuario');
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.

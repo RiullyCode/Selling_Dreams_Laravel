@@ -11,11 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('suscripcion_persona_juridicas', function (Blueprint $table) {
+        Schema::create('suscripciones_personas_juridicas', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('persona_juridica_id');
+            $table->unsignedBigInteger('plan_id');
+            $table->date('fecha_inicio');
+            $table->date('fecha_fin');
             $table->timestamps();
+    
+            $table->foreign('persona_juridica_id')->references('id')->on('personas_juridicas')->onDelete('cascade');
+            $table->foreign('plan_id')->references('id')->on('planes')->onDelete('cascade');
         });
     }
+    
 
     /**
      * Reverse the migrations.

@@ -13,9 +13,18 @@ return new class extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('maquina_id');
+            $table->unsignedBigInteger('categoria_id');
+            $table->string('nombre');
+            $table->integer('unidades_disponibles');
+            $table->binary('foto')->nullable();
             $table->timestamps();
+    
+            $table->foreign('maquina_id')->references('id')->on('maquinas_expendedoras');
+            $table->foreign('categoria_id')->references('id')->on('categorias');
         });
     }
+    
 
     /**
      * Reverse the migrations.

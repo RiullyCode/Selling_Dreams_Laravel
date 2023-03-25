@@ -11,11 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('persona_juridicas', function (Blueprint $table) {
+        Schema::create('personas_juridicas', function (Blueprint $table) {
             $table->id();
+            $table->string('tipo_empresa');
+            $table->string('nombre_empresa');
+            $table->string('email')->unique();
+            $table->string('contrasena');
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.

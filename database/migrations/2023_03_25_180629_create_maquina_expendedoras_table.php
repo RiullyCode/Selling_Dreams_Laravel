@@ -11,11 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('maquina_expendedoras', function (Blueprint $table) {
+        Schema::create('maquinas_expendedoras', function (Blueprint $table) {
             $table->id();
+            $table->decimal('latitud', 9, 6);
+            $table->decimal('longitud', 9, 6);
+            $table->string('calle');
+            $table->string('codigo_postal', 10);
+            $table->unsignedBigInteger('empresa_id');
+            $table->json('estocaje');
             $table->timestamps();
+            
+            $table->foreign('empresa_id')->references('id')->on('personas_juridicas');
         });
     }
+    
 
     /**
      * Reverse the migrations.

@@ -11,11 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('persona_juridica_roles', function (Blueprint $table) {
-            $table->id();
+        Schema::create('personas_juridicas_roles', function (Blueprint $table) {
+            $table->unsignedBigInteger('persona_juridica_id');
+            $table->unsignedBigInteger('rol_id');
             $table->timestamps();
+    
+            $table->primary(['persona_juridica_id', 'rol_id']);
+            $table->foreign('persona_juridica_id')->references('id')->on('personas_juridicas')->onDelete('cascade');
+            $table->foreign('rol_id')->references('id')->on('roles')->onDelete('cascade');
         });
     }
+    
 
     /**
      * Reverse the migrations.
