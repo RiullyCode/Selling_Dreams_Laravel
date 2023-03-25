@@ -64,7 +64,7 @@
                         <button class="btn btn-danger delete-button">Eliminar</button>
                     </div>
                     <div class="vending-machine-image">
-                        <img src="" alt="Foto de la máquina expendedora">
+                        <img src="https://media.discordapp.net/attachments/914613587715182622/1088056121094307901/IMG-20191228-WA0010.jpg?width=509&height=905" alt="Foto de la máquina expendedora">
                     </div>
                 </div>
             </div>
