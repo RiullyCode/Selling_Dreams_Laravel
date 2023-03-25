@@ -55,9 +55,11 @@
                 <h2 class="section-title">Máquinas expendedoras existentes</h2>
                 <div class="vending-machine-card">
                     <div class="vending-machine-data">
+                        <p><strong>Nombre de la empresa:</strong> Soluciones S.A</p>
                         <p><strong>Latitud:</strong> 40.7128</p>
                         <p><strong>Longitud:</strong> -74.0060</p>
                         <p><strong>Calle:</strong> Calle Ejemplo 123</p>
+                        <p><strong>Calle:</strong> código postal</p>
                         <button class="btn btn-warning modify-stock-button">Modificar estocaje</button>
                         <button class="btn btn-danger delete-button">Eliminar</button>
                     </div>
