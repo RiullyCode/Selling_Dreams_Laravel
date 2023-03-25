@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="{{ url('css/mapa.css') }}">
 <!-- link a JS -->
 <script src="{{ url('js/mapa.js') }}"></script>
+<!-- link a api google maps -->
 
 @endsection
 
