@@ -23,7 +23,8 @@
             <div class="col-md-6 full-height">
                 <div id="admin-panel">
                     <h2>Añadir máquina expendedora</h2>
-                    <form id="add-vending-machine-form" enctype="multipart/form-data">
+                    <form id="add-vending-machine-form" enctype="multipart/form-data" method="POST" action="{{ route('maquina-expendedora.store') }}">
+                        @csrf
                         <label for="nombre_empresa">Nombre de la empresa:</label>
                         <input type="text" id="nombre_empresa" name="nombre_empresa" readonly value="Mi empresa">
                         <label for="latitud">Latitud:</label>

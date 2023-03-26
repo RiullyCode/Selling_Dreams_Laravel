@@ -40,3 +40,5 @@ Route::get('/contacto', function () {
 Route::get('/terminosycondiciones', function () {
     return view('terminosycondiciones');
 })->name('terminosycondiciones');
+
+Route::post('/maquina-expendedora/store', [MaquinaExpendedoraController::class, 'store'])->name('maquina-expendedora.store');
